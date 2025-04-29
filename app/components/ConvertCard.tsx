@@ -147,6 +147,9 @@ export const ConvertCard: FC = () => {
             step="1"
             value={fontSize}
             onChange={handleFontSizeChange}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") translateNumber();
+            }}
             className="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer"
           />
         </div>
