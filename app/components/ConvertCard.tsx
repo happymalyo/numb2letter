@@ -74,12 +74,12 @@ export const ConvertCard: FC = () => {
 
   return (
     <div id="main">
-      <div className="w-[480px] p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl shadow-lg font-sans">
+      <div className="md:w-[480px] p-2 sm:p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl shadow-lg font-sans">
         <div className="mb-6 text-center">
           <h2 className="text-2xl font-bold text-primary-700 mb-1">
             Number to Letter Converter
           </h2>
-          <p className="text-neutral-600">
+          <p className="text-neutral-600 text-balance">
             Enter a number to see its alphabetical equivalent
           </p>
         </div>
@@ -89,7 +89,7 @@ export const ConvertCard: FC = () => {
             type="number"
             id="numberInput"
             placeholder="Enter a number (1-26)"
-            className="w-full px-4 py-3 rounded-lg border-2 border-neutral-300 focus:border-primary-500 focus:outline-none transition-all duration-300 shadow-sm"
+            className="w-full px-4 py-2 sx:py-3 rounded-lg border-2 border-neutral-300 focus:border-primary-500 focus:outline-none transition-all duration-300 shadow-sm"
             min="1"
             max="26"
             onChange={handleInputNumber}
@@ -117,7 +117,7 @@ export const ConvertCard: FC = () => {
             <span
               id="result"
               style={{ fontSize: `${fontSize}px` }}
-              className="align-middle"
+              className="align-middle text-balance"
             >
               {outputLetter}
             </span>
