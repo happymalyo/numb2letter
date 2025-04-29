@@ -124,6 +124,7 @@ export const ConvertCard: FC = () => {
               id="result"
               style={{ fontSize: `${fontSize}px` }}
               className="align-middle text-balance"
+              translate="no"
             >
               {outputLetter}
             </span>
@@ -181,6 +182,7 @@ export const ConvertCard: FC = () => {
                     : "bg-neutral-200 text-neutral-700 hover:bg-neutral-300 transition-colors"
                 )}
                 onClick={() => switchLang("mg-MG")}
+                translate="no"
               >
                 MG
               </button>
@@ -193,6 +195,7 @@ export const ConvertCard: FC = () => {
                     : "bg-neutral-200 text-neutral-700 hover:bg-neutral-300 transition-colors"
                 )}
                 onClick={() => switchLang("fr-FR")}
+                translate="no"
               >
                 FR
               </button>
@@ -205,6 +208,7 @@ export const ConvertCard: FC = () => {
                     : "bg-neutral-200 text-neutral-700 hover:bg-neutral-300 transition-colors"
                 )}
                 onClick={() => switchLang("en-IN")}
+                translate="no"
               >
                 EN
               </button>
