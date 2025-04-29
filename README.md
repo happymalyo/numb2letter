@@ -1,40 +1,20 @@
-# Welcome to Remix!
+## Number2Letter
 
-- 📖 [Remix docs](https://remix.run/docs)
+Number2Letter converts numbers (1–26) to their alphabetical equivalents in multiple languages, including Malagasy (MG), French (FR), and English (EN). It uses the [Tanisa](https://www.npmjs.com/package/tanisa) library for Malagasy translations and [to-words](https://www.npmjs.com/package/to-words) for French and English.
 
-## Development
+## Demo
 
-Run the dev server:
+Try the app here : [Numb2Letter](#)
 
-```shellscript
+## Installation
+
+Follow these steps to set up the project locally.
+
+```bash
+git clone git@github.com:happymalyo/numb2letter.git
+cd numb2letter
+npm install
 npm run dev
 ```
 
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+Star the project if you like it. Enjoy ;)
