@@ -74,7 +74,7 @@ export const ConvertCard: FC = () => {
 
   return (
     <div id="main">
-      <div className="md:w-[480px] p-2 sm:p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl shadow-lg font-sans">
+      <div className="max-w-md w-full p-2 sm:p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl shadow-lg font-sans">
         <div className="mb-6 text-center">
           <h2 className="text-2xl font-bold text-primary-700 mb-1">
             Number to Letter Converter
@@ -95,7 +95,10 @@ export const ConvertCard: FC = () => {
             onChange={handleInputNumber}
             value={inputNumber}
           />
-          <span className="material-symbols-outlined absolute right-3 top-1/2 transform -translate-y-1/2 text-neutral-400">
+          <span
+            className="material-symbols-outlined absolute right-3 top-1/2 transform -translate-y-1/2 text-neutral-400"
+            translate="no"
+          >
             numbers
           </span>
         </div>
@@ -105,7 +108,10 @@ export const ConvertCard: FC = () => {
             onClick={translateNumber}
             className="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:bg-primary-200 cursor-pointer"
           >
-            <span className="material-symbols-outlined text-primary-600">
+            <span
+              className="material-symbols-outlined text-primary-600"
+              translate="no"
+            >
               arrow_downward
             </span>
           </button>
@@ -158,7 +164,9 @@ export const ConvertCard: FC = () => {
             onClick={handleReset}
             className="px-4 py-2 bg-neutral-200 hover:bg-neutral-300 rounded-lg transition-all duration-300 flex items-center gap-2"
           >
-            <span className="material-symbols-outlined text-sm">refresh</span>
+            <span className="material-symbols-outlined text-sm" translate="no">
+              refresh
+            </span>
             Reset
           </button>
           <div className="flex justify-end mb-1">
