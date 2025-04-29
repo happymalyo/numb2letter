@@ -4,6 +4,7 @@ import { animate } from "animejs";
 import { ToWords } from "to-words";
 import clsx from "clsx";
 import { GITHUB_REPO, X_ACCOUNT } from "~/constants";
+import { capitalizeWords } from "~/utils/capitalizeWords";
 
 export const ConvertCard: FC = () => {
   const [inputNumber, setInputNumber] = useState<number | string>("");
@@ -126,7 +127,7 @@ export const ConvertCard: FC = () => {
               className="align-middle text-balance"
               translate="no"
             >
-              {outputLetter}
+              {capitalizeWords(outputLetter)}
             </span>
           ) : (
             <div className="relative mx-auto w-24 h-24 rounded-full bg-neutral-100 flex items-center justify-center mb-4 border-2 border-neutral-200 transition-all duration-500 hover:border-primary-300">
