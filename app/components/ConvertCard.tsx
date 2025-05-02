@@ -42,7 +42,7 @@ export const ConvertCard: FC = () => {
     if (localeCode === "mg-MG") {
       setOutputLetter(tanisa.toWords(Number(inputNumber)));
     } else {
-      setOutputLetter(toWords.convert(Number(inputNumber)));
+      setOutputLetter(toWords.convert(Number(inputNumber)).toLowerCase());
     }
   }, [inputNumber, localeCode]);
 
